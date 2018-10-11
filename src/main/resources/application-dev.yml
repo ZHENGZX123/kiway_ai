@@ -1,0 +1,19 @@
+web:
+  web-path: F:\Eclipse Java\kiway_ai\src\main\resources\
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/kiway_ai?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 123456
+  resources:
+    static-locations:
+    - classpath:/META-INF/resources/
+    - classpath:/resources/
+    - classpath:/static/
+    - classpath:/public/
+    - classpath:/file/
+    - file:${web.web-path}
+    
+    
+kiwayMarketplace:
+  baseUrl: http://192.168.8.51:8086
